@@ -1,0 +1,27 @@
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 96vw
+}
+
+img.Kasa {
+width: 40vw;
+min-width: 145px;
+max-width: 210px;
+height: auto;
+}
+
+nav.nav-bar {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.nav-bar .nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
