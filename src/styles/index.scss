@@ -1,3 +1,14 @@
+
+@use './App';
+@use './Apropos';
+@use './Footer' ;
+@use './Home' ;
+@use './Header' ;
+@use './variables';
+@use './mixins';
+@use './banner';
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,12 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 body {
-  margin:0 16px;
   padding:0;
   width: 100%;
   min-height: 100vh;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -56,3 +69,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+

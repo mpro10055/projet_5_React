@@ -1,17 +1,22 @@
-import mer from '../assets/mer.png';
-import '../styles/Home.scss';
+import Image from '../assets/mer.png';
+import Cards from "../components/cards.jsx";
+import Banner from '../components/banner.jsx';
+import Title from '../appartements.json';
+import Cover from '../appartements.json';
  
 function Home() {
   return (
     <main>
         <section>
-            <div class="image-container">
-                <img class="mer" src={mer} alt="vue sur la mer" />
-            </div>
-
+          <Banner Image={Image} Text={"Chez vous, partout et ailleurs"}/>
+        </section>
+        <section>
+          <Cards  Cover={Cover} Title={Title} />
+          <Cards/>
+          <Cards />
         </section>
     </main>
 
   );
 }
-export default Home;
+export default Home;  

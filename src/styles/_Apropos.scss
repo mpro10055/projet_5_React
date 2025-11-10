@@ -1,0 +1,7 @@
+@use "mixins";
+.image-container {
+ @include mixins.image-container;
+}
+img.banner {
+  @include mixins.banner;
+}

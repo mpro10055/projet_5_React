@@ -1,0 +1,24 @@
+
+@use './variables' as *;
+
+.footer {
+  background-color: $colorfooter;
+  p{
+    color: $colortextefooter;
+  }
+}
+
+div {
+	.footer {
+        width: 94vw;
+        padding: 13px;
+		display: flex;
+        flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+	}
+    ///.logofooter{
+        ///
+
+    }
