@@ -1,0 +1,7 @@
+@function gradient($start-color, $end-color) {
+  @return linear-gradient(180deg, rgba($start-color, 0) 0%,
+    rgba($start-color, 0) 42%, 
+    rgba($end-color, 0.205) 99.99%, 
+    rgba($end-color, 0.5) 100%);
+}
+

@@ -1,13 +1,16 @@
+@use './functions' as *;
+@forward './variables';
+@forward './mixins';
+
 
 @use './App';
 @use './Apropos';
-@use './Footer' ;
+
 @use './Home' ;
 @use './Header' ;
-@use './variables';
-@use './mixins';
 @use './banner';
-
+@use './Cards';
+@use './Footer' ;
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -30,12 +33,6 @@ body {
   padding:0;
   width: 100%;
   min-height: 100vh;
-}
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {

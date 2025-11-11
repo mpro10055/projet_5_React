@@ -8,3 +8,7 @@
 img.banner {
   @include mixins.banner;
 }
+
+h1 {
+  @include mixins.h1;
+}
