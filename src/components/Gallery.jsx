@@ -1,9 +1,12 @@
+import { useState } from "react";
+
+
 function Gallery() {
+    const [Index, setIndex] = useState([0]);
     return (
-        <div className="gallery">
-            <h2>Gallery Component</h2>
-        </div>
+        <
     );
 }
+
 
 export default Gallery;

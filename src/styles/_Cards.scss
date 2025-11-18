@@ -9,23 +9,25 @@ section.FullCards {
     gap: 22px;
 }
 
-	img.pictures{ width: 95%;
+	img.pictures{ 
+    width: 95%;
 	height: 255px; 
     max-width: 340px;
     border-radius: 10px;
 }
-  
-
-.colorCards{
-    @include mixins.colorCards;
-    background-color: $colorCards;
-    position: relative;
-}
-
 
 .cardstexte{
   @include mixins.cardstexte;
+}
 
+.Cards{
+    position: relative;
+
+
+.colorCards{
+    @include mixins.colorCards;
+    position: relative;
+}
 }
 
 

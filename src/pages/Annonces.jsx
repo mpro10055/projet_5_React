@@ -1,12 +1,24 @@
-
+import { useParams } from 'react-router-dom';
+import data from '../data/appartements.json';
+import Collapse from '../components/Collapse.jsx';
+import Tags from '../components/tags.jsx';
+import Gallery from '../components/Gallery.jsx';
 
 function Annonces() {
-    return (
-       <div>
-        <main>
-            <h1>Annonces Page</h1>
-        </main>
+  const { id } = useParams();
+  const annonces = data.find((item) => item.id === id);
+  return (
+    <section>
+      <Gallery images={annonces.pictures} />
+      <p>{annonces.title}</p>
+      <div>
+        <Collapse title="Description" texte={annonces.description} />
+        <Collapse title="Equipements" texte={annonces.equipments} />
       </div>
+      <div>
+        <Tags listes={annonces.tags} />
+      </div>
+    </section>
   );
 }
 
