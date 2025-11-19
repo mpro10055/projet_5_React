@@ -2,17 +2,16 @@
 @use './variables' as *;
 
 section.FullCards {
-	grid: inherit;
 	display: grid;
 	grid-template-columns: 1fr;
 	align-content: space-around;
     gap: 22px;
+    margin: 46px;
 }
 
 	img.pictures{ 
     width: 95%;
 	height: 255px; 
-    max-width: 340px;
     border-radius: 10px;
 }
 
@@ -30,4 +29,28 @@ section.FullCards {
 }
 }
 
+@media (min-width: 768px)  {
+    section.FullCards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    section.FullCards {
+        background-color: #F6F6F6;
+        border-radius: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 46px;
+        gap: 0;
+}
+
+    .Cards {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 27px;
+    padding-right: 24px;
+}
+    }
 

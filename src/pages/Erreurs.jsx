@@ -2,12 +2,14 @@ import Erreur from '../components/Erreur.jsx';
 
 function Erreurs() {
   return (
-    <div className="Erreur">
+    <main className="Erreur">
       <Erreur
         title={'404'}
         message={"Oups! La page que vous demandez n'existe pas."}
+        Link
+        to={'/Home'}
       />
-    </div>
+    </main>
   );
 }
 

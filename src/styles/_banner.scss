@@ -2,13 +2,31 @@
 
 .image-container {
  @include mixins.image-container;
+  position: relative;
 }
 
 
 img.banner {
-  @include mixins.banner;
+object-fit: cover;
+@include mixins.banner;
+}
+
+.overlay{
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 h1 {
   @include mixins.h1;
+}
+
+@media (min-width: 768px) {
+  img.banner {
+max-height: 223px;
+  }
 }

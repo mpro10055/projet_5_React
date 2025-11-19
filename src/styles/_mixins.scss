@@ -5,7 +5,6 @@
 @mixin banner{
 width: 94vw;
 height: 30vw;
-max-width: 335px;
 max-height: 150px;
 border-radius: 15px;
 }
@@ -20,13 +19,13 @@ line-height: 100%;
 letter-spacing: 0%;
 vertical-align: bottom;
 position: absolute;
-  top: 86px;
-  left: 25px;
+  top: 111px;
+  left: 36px;
 }
 
 
 @mixin cardstexte{
- width: 294px;
+width: 294px;
 height: 52px;
 position:absolute;
 font-size: 18px;
@@ -42,3 +41,5 @@ color: #FFFFFF
 @mixin colorCards{
 border-radius: 10px;
 }
+
+
