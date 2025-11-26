@@ -2,15 +2,15 @@
 @use './variables' as *;
 
 .footer {
-  background-color: $colorfooter;
+  background-color: $color;
   p{
-    color: $colortextefooter;
+    color: $colortexte;
   }
 }
 
 div {
 	.footer {
-    width: 94vw;
+    width: 100%;
     padding: 13px;
 		display: flex;
     flex-direction: column;

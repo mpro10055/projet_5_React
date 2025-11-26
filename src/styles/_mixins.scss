@@ -1,9 +1,15 @@
+@use './variables' as *;
+
+
 @mixin image-container {
- width: 100%;
+width: 100%;
+justify-content: center;
+display: flex;
+margin-top: 20px;
 }
 
 @mixin banner{
-width: 94vw;
+width: 90%;
 height: 30vw;
 max-height: 150px;
 border-radius: 15px;
@@ -19,7 +25,7 @@ line-height: 100%;
 letter-spacing: 0%;
 vertical-align: bottom;
 position: absolute;
-  top: 111px;
+  top: 25px;
   left: 36px;
 }
 

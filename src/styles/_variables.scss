@@ -1,8 +1,9 @@
-@use 'functions' as *;
+@use './functions' as *;
 
 
-$colorfooter : #000000;
-$colortextefooter : #FFFFFF;
+$color : #000000;
+$colortexte: #FFFFFF;
 
 $color_1: inherit;
 $color_2: #FF6060;
+$colorfooter:green

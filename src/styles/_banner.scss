@@ -1,8 +1,10 @@
 @use "mixins";
+@use './variables' as *;
 
 .image-container {
  @include mixins.image-container;
   position: relative;
+
 }
 
 
@@ -15,8 +17,8 @@ object-fit: cover;
   border-radius: 15px;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 18;
+  width: 90%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }

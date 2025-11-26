@@ -1,39 +1,36 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 function Collapse({ title, texte }) {
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleOpen() {
-    if (isOpen) {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
-    }
+    setIsOpen(!isOpen);
   }
   return (
-    <section className="Collapse">
-      <button onClick={toggleOpen}>{title}</button>
+    <div className="collapse">
+      <button onClick={toggleOpen} className="collapse__btn">
+        {title}
+        <span
+          className={isOpen ? 'arrow arrow--up' : 'arrow arrow--down'}
+        ></span>
+      </button>
       {isOpen && (
-        <div className="collapse-content">
+        <div className="collapse__content">
           {Array.isArray(texte) ? (
             <ul>
-              {texte.map((item, element) => (
-                <li key={element}>{item}</li>
+              {texte.map((item) => (
+                <li className="collapse__texte" key={item}>
+                  {item}
+                </li>
               ))}
             </ul>
           ) : (
-            <p>{texte}</p>
+            <p className="collapse__texte">{texte}</p>
           )}
         </div>
       )}
-    </section>
+    </div>
   );
 }
-
-Collapse.propTypes = {
-  texte: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default Collapse;

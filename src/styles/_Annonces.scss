@@ -1,0 +1,33 @@
+@use './variables' as *;
+
+
+.mainannonce{
+max-width: 1240px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.sectionannonce{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 20px 0;
+}
+
+.locationannonce{
+display: flex;
+         flex-direction: column;
+}
+
+
+
+@media (min-width: 768px){
+.mainannonce{
+padding: 40px 60px;
+
+.collapseannonce{
+    display: flex;
+    gap: 15px;
+}
+}
+}

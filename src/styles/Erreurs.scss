@@ -64,7 +64,7 @@ a.Erreurlink, &:active, &:hover, &:visited{
     justify-content: center;
     display: flex;
     font-size: 18px;
-    color: $colorfooter;
+    color: $color;
 }
   }
 
@@ -74,7 +74,6 @@ a.Erreurlink, &:active, &:hover, &:visited{
         font-size:288px;
         height: 58%;
         justify-content: center;
-        display: flex;
         align-items: center;
       }
       &msg{
