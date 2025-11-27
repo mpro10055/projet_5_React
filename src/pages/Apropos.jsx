@@ -1,5 +1,5 @@
 import Image from '../assets/secondplan.jpg';
-import Banner from '../components/Banner';
+import Banner from '../components/banner';
 import Collapse from '../components/Collapse';
 
 function Apropos() {
