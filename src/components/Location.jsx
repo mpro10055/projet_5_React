@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Location({ location, title }) {
   return (
     <div>
@@ -6,5 +8,10 @@ function Location({ location, title }) {
     </div>
   );
 }
+
+Location.propTypes = {
+  location: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Location;

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function Collapse({ title, texte }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,5 +33,10 @@ function Collapse({ title, texte }) {
     </div>
   );
 }
+
+Collapse.prototype = {
+  title: PropTypes.string.isRequired,
+  texte: PropTypes.any.isRequired,
+};
 
 export default Collapse;

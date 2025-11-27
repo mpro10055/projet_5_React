@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Etoiles({ rating }) {
   const totaletoiles = [1, 2, 3, 4, 5];
   return (
@@ -10,8 +12,7 @@ function Etoiles({ rating }) {
 }
 
 Etoiles.propTypes = {
-  title: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
 };
 
 export default Etoiles;

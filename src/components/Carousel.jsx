@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function Carousel({ pictures, title }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,5 +34,10 @@ function Carousel({ pictures, title }) {
     </div>
   );
 }
+
+Carousel.PropTypes = {
+  pictures: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Carousel;

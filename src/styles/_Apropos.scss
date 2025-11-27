@@ -1,4 +1,6 @@
 @use "mixins";
+@use './variables' as *;
+
 .image-container {
  @include mixins.image-container;
 }

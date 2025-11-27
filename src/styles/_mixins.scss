@@ -36,12 +36,11 @@ height: 52px;
 position:absolute;
 font-size: 18px;
 bottom: 15px;
-font-family: Montserrat;
 font-weight: 700;
 line-height: 143%;
 letter-spacing: 0%;
 text-decoration: none;
-color: #FFFFFF
+color: $colortexte;
 }
 
 @mixin colorCards{

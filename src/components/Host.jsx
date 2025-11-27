@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Host({ picture, name }) {
   return (
     <div className="host">
@@ -6,5 +8,10 @@ function Host({ picture, name }) {
     </div>
   );
 }
+
+Host.propTypes = {
+  name: PropTypes.string.isRequired,
+  pictures: PropTypes.string.isRequired,
+};
 
 export default Host;

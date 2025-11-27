@@ -2,9 +2,9 @@ import { useParams } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import data from '../data/appartements.json';
 import Collapse from '../components/Collapse.jsx';
-import Tags from '../components/tags.jsx';
+import Tags from '../components/Tags.jsx';
 import Carousel from '../components/Carousel.jsx';
-import Etoiles from '../components/etoiles.jsx';
+import Etoiles from '../components/Etoiles.jsx';
 import Location from '../components/Location.jsx';
 import Host from '../components/Host.jsx';
 
