@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function Cards({ id, cover, title }) {
   return (
     <Link to={`/annonces/${id}`}>
-      <div className="Cards">
-        <img className="pictures" src={cover} alt={title} />
-        <h2 className="cardstexte">{title}</h2>
+      <div className="FullCards__Cards">
+        <img className="FullCards__pictures" src={cover} alt={title} />
+        <h2 className="FullCards__texte">{title}</h2>
       </div>
     </Link>
   );

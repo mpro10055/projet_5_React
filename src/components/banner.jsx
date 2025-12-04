@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 function Banner({ Image, Text }) {
   return (
     <section>
-      <div className="image-container">
-        <img className="banner" src={Image} alt="vue sur la mer" />
-        <div className="overlay"></div>
-        <h1>{Text}</h1>
+      <div className="banner">
+        <img className="banner__image" src={Image} alt="vue sur la mer" />
+        <div className="banner__overlay"></div>
+        <h1 className="banner__txt">{Text}</h1>
       </div>
     </section>
   );

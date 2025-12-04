@@ -5,7 +5,9 @@ function Etoiles({ rating }) {
   return (
     <div className="etoiles">
       {totaletoiles.map((etoile) => (
-        <span key={etoile}>{etoile <= rating ? '★' : '☆'}</span>
+        <span className="etoiles__span" key={etoile}>
+          {etoile <= rating ? '★' : '☆'}
+        </span>
       ))}
     </div>
   );

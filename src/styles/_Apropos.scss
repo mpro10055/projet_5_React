@@ -1,9 +1,3 @@
 @use "mixins";
 @use './variables' as *;
 
-.image-container {
- @include mixins.image-container;
-}
-img.banner {
-  @include mixins.banner;
-}

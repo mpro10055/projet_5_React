@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
-      <img className="Kasa" src={logo} alt="Kasa Logo" />
-      <nav className="nav-bar">
-        <ul className="nav-links">
+    <header className="header">
+      <img className="header__Kasa" src={logo} alt="Kasa Logo" />
+      <nav className="header__navbar">
+        <ul className="header__navlinks">
           <li>
-            <Link to="/Home">Home</Link>
+            <Link className="header__navlink" to="/Home">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/Apropos">About</Link>
+            <Link className="header__navlink" to="/Apropos">
+              About
+            </Link>
           </li>
         </ul>
       </nav>

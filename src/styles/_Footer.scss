@@ -1,23 +1,24 @@
 
 @use './variables' as *;
 
-.footer {
-  background-color: $color;
-  p{
-    color: $colortexte;
-  }
-}
-
-div {
-	.footer {
+	.container {
     width: 100%;
-    padding: 13px;
+    padding-top: 13px;
 		display: flex;
     flex-direction: column;
 		justify-content: center;
 		align-items: center;
-	}
-    ///.logofooter{
-        ///
+    background-color: $color;
+    height:208px;
+	
+  &__reserved{
+    color: $colortexte;
+  }
 
     }
+
+@media (min-width: 768px) {
+  .container{
+    height: 100%;
+  }
+}

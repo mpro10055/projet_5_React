@@ -1,36 +1,48 @@
 @use "mixins";
 @use './variables' as *;
 
-section.FullCards {
+.FullCards {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-content: space-around;
     gap: 22px;
     margin: 20px;
+
+&__Cards{
+    position: relative;
+
 }
 
-	img.pictures{ 
+
+	&__pictures{ 
     width: 100%;
 	height: 255px; 
     border-radius: 10px;
 }
 
-.cardstexte{
-  @include mixins.cardstexte;
+&__texte{
+  width: 76%;
+position:absolute;
+font-size: 18px;
+bottom: 15px;
+font-weight: 700;
+line-height: 143%;
+text-decoration: none;
+color: $colortexte;
+vertical-align: bottom;
+margin: 8px;
 }
-
-.Cards{
-    position: relative;
+}
 
 
 .colorCards{
-    @include mixins.colorCards;
+   border-radius: 10px;
     position: relative;
 }
-}
+
 
 @media (min-width: 768px)  {
-    section.FullCards {
+.FullCards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
@@ -38,7 +50,7 @@ section.FullCards {
 
 
 @media (min-width: 1024px) {
-    section.FullCards {
+    .FullCards {
         max-width: 1240px;
         gap: 20px;
         width: 90%;
@@ -46,16 +58,13 @@ section.FullCards {
         background-color: #F6F6F6;
         border-radius: 25px;
         grid-template-columns: repeat(3, 1fr);
-        margin: 50px auto
-        
-}
+        margin: 50px auto;
 
 
-
-    .Cards {
+    &__Cards {
     position: relative;
      padding: 0px;
 }
 
-
+    }
 }

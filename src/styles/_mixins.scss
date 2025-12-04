@@ -1,38 +1,9 @@
 @use './variables' as *;
 
 
-@mixin image-container {
-width: 100%;
-justify-content: center;
-display: flex;
-margin-top: 20px;
-}
-
-@mixin banner{
-width: 90%;
-height: 30vw;
-max-height: 150px;
-border-radius: 15px;
-}
-
-@mixin h1{
-font-family: Montserrat;
-font-weight: 700;
-font-style: Bold;
-font-size: 24px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
-vertical-align: bottom;
-position: absolute;
-  top: 25px;
-  left: 36px;
-}
-
 
 @mixin cardstexte{
-width: 294px;
-height: 52px;
+width: 76%;
 position:absolute;
 font-size: 18px;
 bottom: 15px;
@@ -41,6 +12,8 @@ line-height: 143%;
 letter-spacing: 0%;
 text-decoration: none;
 color: $colortexte;
+vertical-align: bottom;
+margin: 8px;
 }
 
 @mixin colorCards{

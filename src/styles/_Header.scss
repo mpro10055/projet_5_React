@@ -1,6 +1,6 @@
 @use './variables' as *;
 
-header {
+.header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -12,8 +12,14 @@ header {
     align-items: center;
 
 
+&__Kasa {
+	width: 40vw;
+	min-width: 50px;
+	max-width: 145px;
+	height: auto;
+}
 
-	a { width: 55px;
+&__navlink { width: 55px;
 	height: 17px;
 	display: flex;
 	text-decoration: none;
@@ -22,21 +28,14 @@ header {
 		color: $color_1;
 	}
   }
-}
 
-img.Kasa {
-	width: 40vw;
-	min-width: 50px;
-	max-width: 145px;
-	height: auto;
-}
-nav.nav-bar {
+
+&__navbar {
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
-.nav-bar {
-	.nav-links {
+	&__navlinks {
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -46,8 +45,9 @@ nav.nav-bar {
 	
 }
 
+
 @media (min-width: 768px) {
-	header {
+	.header {
 		width: 94vw;
 	}
 

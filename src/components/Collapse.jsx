@@ -18,7 +18,7 @@ function Collapse({ title, texte }) {
       {isOpen && (
         <div className="collapse__content">
           {Array.isArray(texte) ? (
-            <ul>
+            <ul className="collapse__ul">
               {texte.map((item) => (
                 <li className="collapse__texte" key={item}>
                   {item}

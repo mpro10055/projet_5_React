@@ -1,5 +1,5 @@
 import Image from '../assets/mer.png';
-import Cards from '../components/cards.jsx';
+import Cards from '../components/Cards.jsx';
 import Banner from '../components/banner.jsx';
 import data from '../data/appartements.json';
 

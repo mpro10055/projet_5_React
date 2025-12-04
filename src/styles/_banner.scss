@@ -1,34 +1,58 @@
 @use "mixins";
 @use './variables' as *;
 
-.image-container {
- @include mixins.image-container;
-  position: relative;
+.banner {
+position: relative;
+width: 100%;
+justify-content: center;
+display: flex;
+margin-top: 20px;
 
-}
-
-
-img.banner {
+&__image {
 object-fit: cover;
-@include mixins.banner;
+width: 100%;
+height: 30vw;
+max-height: 150px;
+border-radius: 15px;
 }
 
-.overlay{
+&__overlay{
   border-radius: 15px;
   position: absolute;
   top: 0;
-  left: 18;
-  width: 90%;
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
 }
+&__txt{
+font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: left;
+  position: absolute;
+  color: white;
+  margin: 10%;
 
-h1 {
-  @include mixins.h1;
+}
 }
 
 @media (min-width: 768px) {
-  img.banner {
+ .banner__image{
 max-height: 223px;
   }
+  .banner__txt{
+    font-size: 48px;
+    margin: 0%;
+    padding: 8%;
+  }
+}
+
+@media (min-width: 1024px) {
+.banner__txt{
+
+}
 }

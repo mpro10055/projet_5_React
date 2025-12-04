@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+
+.location__texte {
+  font-weight: 500;
+ font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+    .location__texte {
+        font-size: 18px;
+    }
+}

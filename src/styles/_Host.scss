@@ -15,5 +15,13 @@ border-radius: 50%;
 }
 &__texte{
     font-size: 12px;
+    color: $color_2;
+    font-weight:500;
 }
 }
+
+@media (min-width: 768px) {
+    .host__img{
+        width: 64px;
+        height: 64px;
+    }}

@@ -19,6 +19,7 @@
 @forward './Annonces';
 @forward './Host';
 @forward './tags';
+@forward './_Location';
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -39,10 +40,20 @@
 
 
 
-body {
-  width: 100%;
+html,body {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ 
+}
+#root{
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  margin: 2px;
+}
+main{
+  flex: 1;
+  padding: 0 10px;
 }
 
 button:hover {

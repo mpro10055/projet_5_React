@@ -14,7 +14,7 @@ padding: 0 20px 40px;
     position: relative;
    
 &__img{
-width: 100%;
+width:95%;
 height: 100%;
 
 }
@@ -29,9 +29,9 @@ height: 100%;
     font-size: 20px;
     width: 12px;
     height: 20px;
-    top: 108px;
+    top: 44%;
     position: absolute;
-    left: 3px;
+    left: 1%;
     background: none;
     border: none;
 
@@ -54,8 +54,8 @@ height: 100%;
     width: 12px;
     height: 20px;
     position: absolute;
-    top: 44%;
-    left: 92%;
+    top: 45%;
+    left: 91%;
     background: none;
     border: none;
 }
@@ -78,6 +78,10 @@ height: 100%;
 @media(min-width: 768px) {
 .carousel {
  height: 415px;   
+
+&__img{
+    width: 97%;
+}
 }
 }
 
