@@ -11,7 +11,7 @@ function Apropos() {
           <Collapse
             title={'Fiabilité'}
             texte={
-              'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logeùments,et toutes les informations sont reguliérement vérifiées par nos équipes.'
+              'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,et toutes les informations sont reguliérement vérifiées par nos équipes.'
             }
           />
         </div>

@@ -1,12 +1,12 @@
 
 @use './variables' as *;
+@use './mixins' as mix;
 
 	.container {
     width: 100%;
     padding-top: 13px;
-		display: flex;
+	  @include mix.flexcenter;
     flex-direction: column;
-		justify-content: center;
 		align-items: center;
     background-color: $color;
     height:208px;

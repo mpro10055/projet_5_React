@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './mixins' as mix;
 
 
 .mainannonce{
@@ -14,8 +15,7 @@ margin: 20px 0;
 }
 
 .locationannonce{
-display: flex;
-         flex-direction: column;
+@include mix.column;
 }
 
 

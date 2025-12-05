@@ -1,13 +1,12 @@
 @use './variables' as *;
-
+@use './mixins' as mix;
 
 .collapsemain {
     padding: 0 10px;
 }
 
 .collapsesection {
-    display: flex;
-    flex-direction: column;
+  @include mix.column;
     margin-top: 29px;
 }
 
