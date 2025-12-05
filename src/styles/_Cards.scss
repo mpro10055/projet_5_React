@@ -1,4 +1,4 @@
-@use "mixins";
+@use "./mixins";
 @use './variables' as *;
 
 .FullCards {
@@ -55,7 +55,7 @@ margin: 8px;
         gap: 20px;
         width: 90%;
         padding: 40px;
-        background-color: #F6F6F6;
+        background-color:$color_3;
         border-radius: 25px;
         grid-template-columns: repeat(3, 1fr);
         margin: 50px auto;

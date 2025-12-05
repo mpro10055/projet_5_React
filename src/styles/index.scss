@@ -1,13 +1,10 @@
 @forward './variables' ;
-@forward './functions' ;
 
 @forward './mixins';
 
 
 @forward  './App';
-@forward  './Apropos';
 
-@forward  './Home' ;
 @forward './Header' ;
 @forward  './banner';
 @forward  './Cards';

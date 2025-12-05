@@ -1,5 +1,6 @@
 
 @use './variables' as *;
+@use './mixins' as mix;
 
 
 .Erreur { 
@@ -7,9 +8,8 @@
     width: 100%;
 
 &__Container {
-   display: flex;
+   @include mix.flexcenter;
     gap: 51px;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -20,7 +20,6 @@
 
   
 &__titre {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 96px;
     line-height: 140%;
@@ -36,16 +35,14 @@
     line-height: 143%;
     text-align: center;
     vertical-align: bottom;
-    font-family: Montserrat;
-    justify-content: center;
-    display: flex;
+    @include mix.flexcenter;
     font-size: 18px;
     color:$color_2
 }
 &__spacer {
     font-weight: 500;
     line-height: 140%;
-    color: #000000;
+    color: $color;
     margin-top: 16px;
     height: 58vh;
 }
@@ -60,8 +57,7 @@
     line-height: 143%;
     text-align: center;
     vertical-align: bottom;
-    justify-content: center;
-    display: flex;
+    @include mix.flexcenter;
     font-size: 18px;
     color: $color;
 }
@@ -72,8 +68,7 @@
       &titre {
         font-size:288px;
         height: 58%;
-        justify-content: center;
-        align-items: center;
+        @include mix.center;
       }
       &__msg{
         font-size:36px;

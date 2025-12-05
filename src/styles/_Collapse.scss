@@ -8,8 +8,7 @@
 .collapsesection {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 44px;
+    margin-top: 29px;
 }
 
 .collapse {
@@ -26,6 +25,7 @@
         border-radius: 5px; 
         color: $colortexte;
         background-color: $color_2;
+        font-weight: 700;
     }
     
 &__ul{
@@ -35,6 +35,7 @@
 &__texte{
       font-size: small;
       list-style: none;
+      font-weight: 400;
 }
 
 .arrow {
@@ -60,8 +61,7 @@
 
 
 @media (min-width: 768px)  {
-.collapsesection {
-}
+ 
 
 .collapse{
 
@@ -74,5 +74,11 @@
     font-size: large;
     width: 88%;
 }
+}
+}
+
+@media (min-width: 1224px)  {
+   .collapsesection{
+       margin-top: 30px;
 }
 }
