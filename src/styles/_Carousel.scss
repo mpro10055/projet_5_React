@@ -10,7 +10,7 @@ padding: 0 20px 40px;
 
 .carousel{
     width: 100%;
-    height:100%;
+    height:255px;
     margin-top: 15px;
     position: relative;
    
@@ -68,7 +68,13 @@ height: 100%;
 
 }
 &__span{
-    display: none
+  justify-content: center;
+  display: flex;
+  color: $colortexte;
+  position: absolute;
+  right: 50%;
+  bottom: 10px;
+  font-size: 11px;
 }
 }
 
@@ -88,6 +94,9 @@ width: 40px;
 height: 40px;
 border-right: 11px solid $colortexte;
 border-bottom: 11px solid $colortexte;
+}
+&__span{
+    font-size: 20px;
 }
 }
 }
