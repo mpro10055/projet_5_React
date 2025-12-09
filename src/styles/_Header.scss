@@ -19,16 +19,23 @@
 	height: auto;
 }
 
-&__navlink { width: 55px;
-	height: 17px;
+&__navlink { 
+    text-transform: uppercase;
+  	height: 17px;
 	display: flex;
 	text-decoration: none;
-	
-&:active, &:hover, &:visited{
-		color: $color_1;
-	}
-  }
+	color: $color;
+	font-size: 12px;
 
+&.active, &:hover, &:visited{
+		color: $color;
+	}
+
+&.active,&:hover{
+	text-decoration: underline;
+	text-underline-offset: 6px;
+  }
+}
 
 &__navbar {
 	display: flex;
@@ -45,10 +52,13 @@
 	
 }
 
-
 @media (min-width: 768px) {
 	.header {
 		width: 94vw;
-	}
+	&__navlink { 
+    font-size: 24px; 
+    text-transform: capitalize;
 
+	}
+}
 }

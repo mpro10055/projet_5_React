@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -8,14 +8,14 @@ function Header() {
       <nav className="header__navbar">
         <ul className="header__navlinks">
           <li>
-            <Link className="header__navlink" to="/Home">
-              Home
-            </Link>
+            <NavLink className="header__navlink" to="/Home">
+              Acceuil
+            </NavLink>
           </li>
           <li>
-            <Link className="header__navlink" to="/Apropos">
-              About
-            </Link>
+            <NavLink className="header__navlink" to="/Apropos">
+              A propos
+            </NavLink>
           </li>
         </ul>
       </nav>
