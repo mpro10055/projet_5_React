@@ -31,7 +31,7 @@
 		color: $color;
 	}
 
-&.active,&:hover{
+&.active{
 	text-decoration: underline;
 	text-underline-offset: 6px;
   }
